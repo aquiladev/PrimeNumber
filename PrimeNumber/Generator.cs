@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace PrimeNumber
 {
-    public static class Generator
+    public class Generator
     {
         public static IList<string> GetPrimes()
         {
             var primes = new List<string>();
             for (int i = 2; i < 1000; i++)
             {
-                if (Simple(i))
+                if (IsPrime(i))
                     primes.Add(Convert.ToString(i));
             }
 
             return primes;
         }
 
-        private static bool Simple(int n)
+        private static bool IsPrime(int n)
         {
             int i, sq;
             if (n % 2 == 0 && n != 2) { return false; }
