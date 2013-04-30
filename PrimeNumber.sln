@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberTests", "PrimeNu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberService", "PrimeNumberService\PrimeNumberService.csproj", "{9B412B44-F4B8-4441-8BEC-DD13CAFD88FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{33E706DD-1D20-47E5-B4C3-31B5D29419DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{9B412B44-F4B8-4441-8BEC-DD13CAFD88FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B412B44-F4B8-4441-8BEC-DD13CAFD88FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B412B44-F4B8-4441-8BEC-DD13CAFD88FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E706DD-1D20-47E5-B4C3-31B5D29419DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E706DD-1D20-47E5-B4C3-31B5D29419DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E706DD-1D20-47E5-B4C3-31B5D29419DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E706DD-1D20-47E5-B4C3-31B5D29419DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

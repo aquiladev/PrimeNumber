@@ -15,7 +15,7 @@ namespace PrimeNumberTests
         public void Generate_CorrectCount()
         {
             //act
-            var primes = Generator.GetPrimes();
+            var primes = Generator.Primes();
 
             //assert
             Assert.AreEqual(168, primes.Count());
@@ -31,7 +31,7 @@ namespace PrimeNumberTests
         public void Generate_CorrectMarginalValues(int position, int value)
         {
             //act
-            var primes = Generator.GetPrimes();
+            var primes = Generator.Primes();
 
             //assert
             Assert.AreEqual(value.ToString(), primes[position]);
@@ -48,7 +48,7 @@ namespace PrimeNumberTests
         public void Generate_IncorrectVaules(int value)
         {
             //act
-            var primes = Generator.GetPrimes();
+            var primes = Generator.Primes();
 
             //assert
             Assert.IsFalse(primes.Any(x => x.Equals(value)));

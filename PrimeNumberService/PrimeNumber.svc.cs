@@ -14,7 +14,7 @@ namespace PrimeNumberService
     {
         public string[] GetPrimes()
         {
-            return Generator.GetPrimes().ToArray();
+            return Generator.Primes().ToArray();
         }
 
         public string[] GetPrimesStartedAt(string beginSigns)
@@ -23,7 +23,7 @@ namespace PrimeNumberService
             if (string.IsNullOrEmpty(value))
                 return new string[0];
 
-            return Generator.GetPrimes()
+            return Generator.Primes()
                 .Where(x => x.StartsWith(value))
                 .ToArray();
         }

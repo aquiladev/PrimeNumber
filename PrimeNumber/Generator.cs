@@ -1,22 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PrimeNumber
 {
-    public class Generator
+    public static class Generator
     {
-        public static IList<string> GetPrimes()
+        public static IList<string> Primes()
         {
+            int e = 0;
             var primes = new List<string>();
             for (int i = 2; i < 1000; i++)
             {
                 if (IsPrime(i))
-                    primes.Add(Convert.ToString(i));
+                    primes.Add(Convert.ToString(i, CultureInfo.CurrentCulture));
             }
-
             return primes;
         }
 
